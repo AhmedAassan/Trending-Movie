@@ -1,0 +1,21 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "pacman" [fullScreen] = "true"></ngx-spinner>
+<div class="container-fluid py-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="w-100" [src]="imgprefix+actordetalis.profile_path" [alt]="actordetalis.name">
+    </div>
+    <div class="col-md-8 p-5">
+
+      <div class="d-flex mb-2">
+        <h2 class="name-actor">{{actordetalis.name}}</h2>
+        <div class="type">{{actordetalis.known_for_department}}</div>
+      </div>
+
+      <p>{{actordetalis.biography}}</p>
+      <div class="d-flex">
+        <div class="place">{{actordetalis.place_of_birth}}</div>
+        <div class="birth">{{actordetalis.birthday|date}}</div>
+      </div>
+    </div>
+  </div>
+</div>

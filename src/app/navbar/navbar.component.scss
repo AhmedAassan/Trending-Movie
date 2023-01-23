@@ -1,0 +1,22 @@
+.navbar-brand{
+  font-size: 35px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 10px;
+}
+.logout{
+  cursor: pointer;
+}
+nav{
+  z-index: 999;
+}
+@media screen and (max-width: 767px){
+  
+  .navbar-toggler{
+    background-color: #EEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-5px);
+  }
+  
+}

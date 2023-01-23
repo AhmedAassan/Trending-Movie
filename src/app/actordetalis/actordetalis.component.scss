@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.name-actor{
+  color: #24baef;
+  font-family:'Roboto', sans-serif;
+}
+.type{
+  color: black;
+  background-color: #E2B616;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bolder;
+  height: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 0px 30px;
+}
+p{
+  font-size: 17px;
+  line-height: 30px;
+}
+.place{
+  background-color: #032541;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.birth{
+  background-color: #09947d;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-left: 35px;
+}

@@ -1,0 +1,19 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-atom" [fullScreen] = "true"></ngx-spinner>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img class="w-100" [src]="imgprefix+moviedetalis.poster_path" [alt]="moviedetalis.original_title">
+    </div>
+    <div class="col-md-7 offset-1">
+      <h2 class="mb-4">{{moviedetalis.original_title}}</h2>
+      <p>{{moviedetalis.overview}}</p>
+      <div class="genres mx-2" *ngFor="let genre of genres">{{genre.name}}</div>
+      <div class="vote-avarge d-flex">
+        <div class="vote">{{moviedetalis.vote_average}}</div>
+        <div class="imdb">IMDb</div>
+      </div>
+      <img *ngFor="let marvel of marvel" class="w-25 ml-2 my-3" [src]="imgprefix+marvel.logo_path" alt="">
+      <a target="_blank" class="ml-5 more" [href]="moviedetalis.homepage">Learn more ...</a>
+    </div>
+  </div>
+</div>

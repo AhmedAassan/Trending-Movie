@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+$bgColor:#131722;
+$lightBgColor:#24baef;
+$bgTransparent:rgba(36,186, 239, .6) ; 
+$fontColor:#fff;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0; 
+
+body{
+  background-color: $bgColor;
+  color: $fontColor;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+a{
+  font-size: 18px;
+  color: $fontColor;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover{
+  font-size: 18px;
+  color: $lightBgColor;
+}
+.navbar-brand{
+  font-size:large;
+}
+.h-350-75{
+  height: 350.75px;
+}
+.hidden{
+  overflow: hidden;
+}
+.zoom{
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.zoom:hover{
+  transform: scale(1.1);
+}
+.vote{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: $lightBgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.bordr{
+  position: relative;
+}
+.bordr::before{
+  content: "";
+  position: absolute;
+  top: 25%;
+  height: 1px;
+  width: 35%;
+  background-color: $borderColor;
+}
+.bordr::after{
+  content: "";
+  position: absolute;
+  top: 70%;
+  height: 1px;
+  width: 80%;
+  background-color: $borderColor;
+}
+.color{
+  color: $lightBgColor;
+  font-weight: bolder;
+}
